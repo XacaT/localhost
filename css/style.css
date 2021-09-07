@@ -1,0 +1,33 @@
+body {
+	/*background:red;*/
+	margin:0px;
+	padding:0px;
+}
+
+.table td{
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+.table td.active{
+	background: #ccc;
+	color: red;
+	text-decoration: underline;
+}
+
+.box {
+	display: none;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 500px;
+}
+
+
+.but {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	padding: 20px;
+	background: #ccc;
+	display: inline-block;
+}
