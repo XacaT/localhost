@@ -473,6 +473,43 @@ try {
 // Продолжение выполнения
 echo "Привет, мир\n";
 */
+/*
+$str = ' qwe rty';
+function split ($str){
+    $res = [];
+    if (strlen($str) <= 1){
+        return [];
+    }
+    else if ((strlen($str)) % 2 !== 0){
+        $str = $str . '_';
+        $res = str_split ($str,2);
+    } else {
+        $res = str_split ($str,2);
+    }
+    return str_replace(' ','_',$res);
+        
+}   
+dump (split($str));
+*/
+
+class FormBuilder {
+    protected $method = 'POST';
+    protected $action;
+    public $form;
+
+    public function start () {
+        $this->form = '<form method="'.$this->method.'" action ="' . $this->action.'"';
+    }
+    //public function add ($type, array $params) {}
+    //public function end () {}
+
+}
+$a = new FormBuilder;
+$a->start();
+dump ($a->form);
+
+?>
+
 
 
 
